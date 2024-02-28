@@ -105,7 +105,6 @@ music.addEventListener("loadedmetadata", loadMetaDataDuration);
 music.addEventListener("ended", () => changeSong(1));
 // Set Progress Bar
 progressContainer.addEventListener("click", (e) => {
-  console.log(e);
   const percentOnBar = e.offsetX / progressContainer.offsetWidth;
   music.currentTime = music.duration * percentOnBar;
   playSong();
