@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <title>Music Player</title>
+    <script
+      src="https://kit.fontawesome.com/e505c335ee.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="player-container">
+      <!--  Song  -->
+      <div class="img-container">
+        <img src="" alt="Album Art" />
+      </div>
+      <h2 id="title"></h2>
+      <h3 id="artist"></h3>
+      <audio></audio>
+      <!-- Progress  -->
+      <div class="progress-container" id="progress-container">
+        <div class="progress" id="progress"></div>
+        <div class="duration-wrapper">
+          <span id="current-time">0:00</span>
+          <span id="duration"></span>
+        </div>
+      </div>
+      <!-- Button Controls -->
+      <div class="player-controls">
+        <i class="fa-solid fa-backward" id="prev" title="Previous"></i>
+        <i class="fa-solid fa-play main-button" id="play" title="Play"></i>
+        <i class="fa-solid fa-forward" id="next" title="Next"></i>
+      </div>
+    </div>
+
+    <!-- <i class="fa-solid fa-house"></i> -->
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
